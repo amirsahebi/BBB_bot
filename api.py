@@ -61,7 +61,8 @@ def echo(update, context):
         f = open(f'./{name}.mp4', 'rb')
         update.message.reply_video(f)
         os.remove(f'./{name}.mp4')
-    except Exception:
+    except Exception as ex:
+        update.message.reply_text(ex)
         update.message.reply_text('لینک وارد شده صحیح نیست!')
 
 def hello(update, context):
