@@ -108,7 +108,7 @@ def main():
         listen="0.0.0.0",
         port=int(PORT),
         url_path="5241117890:AAGFsqOE7hrEzsq0XQvBee_3e5R1qW1T6io",
-        webhook_url='https://bbb-dl1.herokuapp.com/' + "5241117890:AAGFsqOE7hrEzsq0XQvBee_3e5R1qW1T6io"
+        webhook_url='https://bbb-dl2.herokuapp.com/' + "5241117890:AAGFsqOE7hrEzsq0XQvBee_3e5R1qW1T6io"
     )
 
 
