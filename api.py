@@ -51,16 +51,11 @@ def echo(update, context):
     """Echo the user message."""
 
     try:    
-        driver = webdriver.Chrome("./chromedriver")
-        wait = WebDriverWait(driver, 20)
-        driver.get(update.message.text)
-        time.sleep(10)
-        name=driver.find_element(By.CLASS_NAME,"title").text
         os.system(f"bbb-dl -aw -aa -f ./out.mp4 {update.message.text}")
-        os.rename("./out.mp4",f"./{name}.mp4")
-        f = open(f'./{name}.mp4', 'rb')
+        os.rename("./out.mp4",f"./share.mp4")
+        f = open(f'./share.mp4', 'rb')
         update.message.reply_video(f)
-        os.remove(f'./{name}.mp4')
+        os.remove(f'./share.mp4')
     except Exception as ex:
         update.message.reply_text(ex)
         update.message.reply_text('لینک وارد شده صحیح نیست!')
