@@ -1,4 +1,5 @@
 python-telegram-bot
 bbb-dl
 selenium
+git+https://github.com/Rapptz/discord.py
 ffmpeg
